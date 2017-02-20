@@ -41,7 +41,7 @@ def getTokens(input):
 
 def TL():
 	allurls = './data/data.csv'	#path to our all urls file
-	allurlscsv = pd.read_csv(allurls,',',error_bad_lines=False)	#reading file
+	allurlscsv = pd.read_csv(allurls,',',error_bad_lines=False, encoding = "ISO-8859-1")	#reading file
 	allurlsdata = pd.DataFrame(allurlscsv)	#converting to a dataframe
 
 	allurlsdata = np.array(allurlsdata)	#converting it into an array
